@@ -5,10 +5,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    --color-one: #161A30;
-    --color-two: #31304D;
-    --color-three: #B6BBC4;
-    --color-four: #F0ECE5;
+    --color-one: #1f2937;
+    --color-two: #3882f6;
+    --color-three: #e5e7eb;
+    --color-four: #f9faf8;
 }
 
 body {
@@ -32,10 +32,18 @@ header{
     margin: 24px 200px;
 }
 
+
+.header-logo {
+    font-size:  24px;
+    color: var(--color-four);
+    font-weight: bolder;
+}
+
 ul.header-link {
     display: flex;
-    gap: 12px;
+    gap: 18px;
     list-style: none;
+    color: var(--color-three);
 }
 
 .header-content {
@@ -62,10 +70,17 @@ div.header-content-container {
     flex-grow: 0;
 }
 
+div.header-content-container h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--color-four);
+    max-width: 300px;
+}
+
 input[type="button"] {
     width: 100px ;
     height: 30px;
-    background-color: rgb(22, 114, 219);
+    background-color: var(--color-two);
     color: var(--color-four);
     font-size: 16px;
     font-weight: bold;
@@ -86,12 +101,15 @@ section#Information {
 
 section#Information h2  {
     margin-bottom: 48px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: var(--color-one);
 }
 
 img.info-frame {
     width: 200px;
     height: 200px;
-    border: rgb(22, 114, 219) ;
+    border: var(--color-two) ;
     border-radius: 5px;
 }
 div.info-bottom-bar {
@@ -114,6 +132,10 @@ section#quote {
 section#quote p {
     margin: 0 200px;
     line-height: 125%;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--color-one);
 }
 
 section#quote p.author {
@@ -139,9 +161,15 @@ div.sign-up-container {
     width: 100%;
     margin: 0 200px;
     padding: 0 120px;
-    background-color: rgb(22, 114, 219) ;
+    background-color: var(--color-two);
+    color: var(--color-four);
     height: 40%;
     border-radius: 5px;
+}
+
+p.call-to-header {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 input[type="button"].sign-up-button {
@@ -154,5 +182,5 @@ footer {
     text-align: center;
     margin: 0 200px;
     padding: 32px;
-    background-color: var(--color-two);
+    background-color: var(--color-one);
 }
