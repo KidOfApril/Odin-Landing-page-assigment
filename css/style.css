@@ -1,0 +1,72 @@
+/* CSS Color Variant */
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --color-one: #161A30;
+    --color-two: #31304D;
+    --color-three: #B6BBC4;
+    --color-four: #F0ECE5;
+}
+
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+    margin: 24px 200px;
+    min-height: 60vh;
+    gap: 100px;
+    background-color: var(--color-one);
+}
+
+.header-topbar {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-four);
+    margin: 24px 200px;
+}
+
+ul.header-link {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.header-content {
+    display: flex;
+    max-height: 30vh;
+    justify-content: space-between;
+    margin: 24px 200px;
+}
+
+img#header-image {
+    min-width: 50%;
+    height: auto;
+}
+
+div.header-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 50%;
+    gap: 12px;
+    flex-grow: 0;
+    color: var(--color-four);
+    flex-grow: 0;
+}
+
+input[type="button"] {
+    width: 100px ;
+    height: 30px;
+    background-color: rgb(22, 114, 219);
+    color: var(--color-four);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+
